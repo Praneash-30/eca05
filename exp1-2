@@ -1,0 +1,25 @@
+clc;
+clear;
+r=input("Enter the value of r=");
+pi=input("Enter the value of pi=");
+z=input("Enter the value of z=");
+x=r*cosd(pi);
+y=r*sind(pi);
+z=z;
+disp("cylindrical to cartesian coordinate system of p(x,y,z)=",[x y z]);
+r=sqrt(r^2+z^2);
+pi=pi;
+theta=atand(r/z);
+disp("cylindrical to spherical coordinate system of s(r,pi,theta)=",[r pi theta]);
+
+
+Enter the value of r=12
+
+Enter the value of pi=14
+
+Enter the value of z=16
+
+  "cylindrical to cartesian coordinate system of p(x,y,z)="
+   11.643549   2.9030627   16.
+  "cylindrical to spherical coordinate system of s(r,pi,theta)="
+   20.   14.   51.340192
